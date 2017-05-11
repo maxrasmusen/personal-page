@@ -23,7 +23,7 @@ a:visited {
 #index-main {
 	width: 450px;
 	margin: 0 auto;
-	margin-top: 200px;
+	margin-top: 150px;
 	background-color: white;
 	border: 1px solid #257FC4;
 	border-radius: 5px;
@@ -39,12 +39,13 @@ a:visited {
 	margin: 0px 60px 0px 60px;
 }
 
-ul {
+#links {
 	list-style-type: none;
 	text-align: center;
 	padding: 0px;
 	font-weight: 100;
 	margin: 0px;
+	margin-bottom: 10px;
 }
 
 #links li {
@@ -56,6 +57,14 @@ ul {
 li:hover {
 	background-color: #257FC4;
 	color: white;
+}
+
+#contact {
+	color: grey;
+	text-align: center;
+	font-size: 13px;
+	margin: 0px 60px 0px 60px;
+	border-top: solid 1px #257FC4;
 }
 
 header {
@@ -84,6 +93,9 @@ nav ul {
 	list-style-type: none;
 	height: 100%;
 	line-height: 85px;
+	margin: 0px;
+	text-align: center;
+	padding: 0px;
 } 
 
 nav li {
@@ -100,7 +112,7 @@ nav li {
 	border: 1px solid #257FC4;
 	border-radius: 5px;
 	/*box-shadow: 5px 5px 5px #767676;*/
-	padding: 100px 55px 70px 55px;
+	padding: 50px 55px 70px 55px;
 	text-align: center;
 }
 

@@ -1,0 +1,46 @@
+/** {
+	border: solid black 1px;
+}*/
+
+body {
+	background-color: #f2f2f2;
+}
+
+main {
+	width: 350px;
+	margin: 0 auto;
+	margin-top: 200px;
+	background-color: white;
+	border: 1px solid #257FC4;
+	border-radius: 5px;
+	/*box-shadow: 5px 5px 5px #767676;*/
+	padding: 50px 5px 30px 5px;
+}
+
+main h1 {
+	text-align: center;
+	color: #257FC4;
+	font-family: Futura;
+	font-weight: 200;
+	border-bottom: solid 1px #257FC4;
+}
+
+#links ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+	font-family: Futura;
+	font-weight: 100;
+	margin: 0px 60px 0px 60px;
+}
+
+#links li {
+	/*background-color: lightgrey;*/
+	/*border-bottom: 1px solid black;*/
+	padding-top: 10px;
+}
+
+#links li:hover {
+	background-color: #257FC4;
+	color: white;
+}

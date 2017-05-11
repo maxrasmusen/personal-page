@@ -119,3 +119,9 @@ nav li {
 #page h2 {
 	color: #257FC4;
 }
+
+#page > ul {
+	width: 60%;
+	text-align: left;
+	margin: auto;
+}

@@ -1,9 +1,13 @@
+/*Blue Color: #257FC4 */
+
 /** {
 	border: solid black 1px;
 }*/
 
 body {
 	background-color: #f2f2f2;
+	font-family: Futura;
+	margin: 0px;
 }
 
 
@@ -16,32 +20,31 @@ a:visited {
 	color: black;
 }
 
-main {
-	width: 350px;
+#index-main {
+	width: 450px;
 	margin: 0 auto;
 	margin-top: 200px;
 	background-color: white;
 	border: 1px solid #257FC4;
 	border-radius: 5px;
 	/*box-shadow: 5px 5px 5px #767676;*/
-	padding: 50px 5px 30px 5px;
+	padding: 100px 55px 70px 55px;
 }
 
-main h1 {
+#index-main h1 {
 	text-align: center;
 	color: #257FC4;
-	font-family: Futura;
 	font-weight: 200;
 	border-bottom: solid 1px #257FC4;
+	margin: 0px 60px 0px 60px;
 }
 
-#links ul {
+ul {
 	list-style-type: none;
 	text-align: center;
 	padding: 0px;
-	font-family: Futura;
 	font-weight: 100;
-	margin: 0px 60px 0px 60px;
+	margin: 0px;
 }
 
 #links li {
@@ -50,7 +53,57 @@ main h1 {
 	padding-top: 10px;
 }
 
-#links li:hover {
+li:hover {
 	background-color: #257FC4;
 	color: white;
+}
+
+header {
+	background-color: white;
+	border-bottom: 1px solid #257FC4;
+	padding-left: 50px;
+	height: 60px;
+}
+
+header h1{
+	color: #257FC4;
+	display: inline-block;
+	margin: 0px;
+	vertical-align: bottom;
+	width: 335px;
+	text-align: center;
+}
+
+nav {
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+}
+
+nav ul {
+	list-style-type: none;
+	height: 100%;
+	line-height: 85px;
+} 
+
+nav li {
+	display: inline-block;
+	width: 150px;
+	height:100%;
+}
+
+#page {
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	background-color: white;
+	border: 1px solid #257FC4;
+	border-radius: 5px;
+	/*box-shadow: 5px 5px 5px #767676;*/
+	padding: 100px 55px 70px 55px;
+	text-align: center;
+}
+
+#page h2 {
+	color: #257FC4;
 }

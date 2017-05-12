@@ -111,8 +111,9 @@ nav li {
 	border: 1px solid #257FC4;
 	border-radius: 5px;
 	/*box-shadow: 5px 5px 5px #767676;*/
-	padding: 50px 55px 70px 55px;
+	padding: 50px 55px 0px 55px;
 	text-align: center;
+	max-width: 800px;
 }
 
 #page h2 {

@@ -13,7 +13,7 @@ Edit with the text editor of your choice.
 
 These are the same links that are linked in ```projects.html```: 
 
-[Google](google.co.uk)
+[Google](https://www.google.co.uk)
 
 ![Google image](images/google.png)
 

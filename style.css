@@ -158,6 +158,36 @@ nav li {
 	margin-bottom: 15px;
 }
 
+#project-list {
+	list-style-type: none;
+	padding:0px 10px 10px 10px;
+	border-bottom: 1px solid #257FC4;
+}
+
+#project-list li {
+	display: inline-block;
+}
+
+#project-list li:hover {
+	background-color: #257FC4;
+	color: white;
+}
+
+.to-top {
+	display: block;
+	margin:auto;
+	width: 160px;
+}
+
+.to-top:hover {
+	background-color: #257FC4;
+	color:white;
+}
+
+#page img {
+	max-width: 100%;
+}
+
 @media screen and (max-width: 1175px) {
 	header h1 {
 		display: block;

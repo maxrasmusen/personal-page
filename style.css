@@ -71,7 +71,6 @@ header {
 	background-color: white;
 	border-bottom: 1px solid #257FC4;
 	padding-left: 50px;
-	height: 60px;
 }
 
 header h1{
@@ -81,18 +80,16 @@ header h1{
 	vertical-align: bottom;
 	width: 335px;
 	text-align: center;
+	height: 100%;
 }
 
 nav {
 	display: inline-block;
-	height: 100%;
 	vertical-align: top;
 }
 
 nav ul {
 	list-style-type: none;
-	height: 100%;
-	line-height: 85px;
 	margin: 0px;
 	text-align: center;
 	padding: 0px;
@@ -101,7 +98,7 @@ nav ul {
 nav li {
 	display: inline-block;
 	width: 150px;
-	height:100%;
+	padding: 20px 0px 8px 0px;
 }
 
 #page {
@@ -124,4 +121,9 @@ nav li {
 	width: 60%;
 	text-align: left;
 	margin: auto;
+}
+
+#page li:hover {
+	background-color: white;
+	color: black;
 }

@@ -130,9 +130,10 @@ nav li {
 	color: black;
 }
 
-p {
+#page p {
 	width: 90%;
 	margin: auto;
+	margin-bottom: 15px;
 }
 
 @media screen and (max-width: 1175px) {

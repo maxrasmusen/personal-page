@@ -127,3 +127,15 @@ nav li {
 	background-color: white;
 	color: black;
 }
+
+@media screen and (max-width: 1175px) {
+	header h1 {
+		display: block;
+		margin: auto;
+	}
+
+	nav {
+		display: block;
+		margin: auto;
+	}
+}

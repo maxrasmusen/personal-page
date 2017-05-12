@@ -36,7 +36,7 @@ a:visited {
 	border: 1px solid #257FC4;
 	border-radius: 5px;
 	padding: 80px 55px 70px 55px;
-	box-shadow: 0px 0px 20px #257FC4;
+	/*box-shadow: 0px 0px 20px #257FC4;*/
 }
 
 #index-main h1 {
@@ -85,7 +85,7 @@ header {
 	background-color: white;
 	border-bottom: 1px solid #257FC4;
 	padding-left: 50px;
-	box-shadow: 0px 0px 20px #257FC4;
+	/*box-shadow: 0px 0px 20px #257FC4;*/
 
 }
 
@@ -129,7 +129,7 @@ nav li {
 	padding: 50px 55px 0px 55px;
 	text-align: center;
 	max-width: 800px;
-	box-shadow: 0px 0px 20px #257FC4;
+	/*box-shadow: 0px 0px 20px #257FC4;*/
 }
 
 #page h2 {
@@ -137,6 +137,10 @@ nav li {
 }
 
 #page h3 {
+	color: #257FC4;
+}
+
+#page h4 {
 	color: #257FC4;
 }
 
@@ -156,16 +160,18 @@ nav li {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 15px;
+	font-size: 1em;
 }
 
 #project-list {
 	list-style-type: none;
-	padding:0px 10px 10px 10px;
+	padding:0px 20px 0px 20px;
 	border-bottom: 1px solid #257FC4;
 }
 
 #project-list li {
 	display: inline-block;
+	padding: 10px 5px 10px 5px;
 }
 
 #project-list li:hover {

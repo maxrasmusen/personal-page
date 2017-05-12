@@ -132,10 +132,34 @@ nav li {
 	header h1 {
 		display: block;
 		margin: auto;
+		padding-top: 10px;
 	}
 
 	nav {
 		display: block;
 		margin: auto;
+	}
+
+	header {
+		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	nav li {
+		display: block;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 15px;
 	}
 }

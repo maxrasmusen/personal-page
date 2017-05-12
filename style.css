@@ -78,6 +78,10 @@ li:hover {
 	padding-top: 10px;
 }
 
+#contact a {
+	color: grey;
+}
+
 header {
 	background-color: white;
 	border-bottom: 1px solid #257FC4;

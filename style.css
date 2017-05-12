@@ -132,10 +132,15 @@ nav li {
 	color: #257FC4;
 }
 
+#page h3 {
+	color: #257FC4;
+}
+
 #page > ul {
-	width: 60%;
+
 	text-align: left;
 	margin: auto;
+	display: inline-block;
 }
 
 #page li:hover {

@@ -15,7 +15,9 @@ These are the same links that are linked in ```projects.html```:
 
 [Google](https://www.google.co.uk)
 
-![Google image](images/google.png)
+## Screnshots
+
+![Screenshot of CV Page](images/screenshot-cv.png)
 
 ## Technologies Learned
 ### Languages

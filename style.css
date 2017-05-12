@@ -10,6 +10,10 @@ body {
 	margin: 0px;
 }
 
+@keyframes opac {
+	from{opacity:0} 
+	to{opacity:1}
+}
 
 a {
 	text-decoration: none;
@@ -18,6 +22,10 @@ a {
 
 a:visited {
 	color: black;
+}
+
+main {
+	animation: opac 0.5s;
 }
 
 #index-main {
@@ -82,6 +90,7 @@ header h1{
 	width: 335px;
 	text-align: center;
 	height: 100%;
+	animation: opac 0.5s;
 }
 
 nav {

@@ -63,9 +63,10 @@ li:hover {
 	color: grey;
 	text-align: center;
 	font-size: 13px;
-	margin: 15px auto;
+	margin: 15px auto 0px auto;
 	border-top: solid 1px #257FC4;
 	width: 300px;
+	padding-top: 10px;
 }
 
 header {
@@ -106,6 +107,7 @@ nav li {
 	width: 80%;
 	margin: auto;
 	margin-top: 50px;
+	margin-bottom: 50px;
 	background-color: white;
 	border: 1px solid #257FC4;
 	border-radius: 5px;

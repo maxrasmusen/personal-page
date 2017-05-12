@@ -18,8 +18,6 @@ This is a website with some personal details, my CV and a few projects to displa
 
 These are the same links that are linked in ```projects.html```: 
 
-[Google](https://www.google.co.uk)
-
 ## Screnshots
 
 ![Screenshot of CV Page](images/screenshot-cv.png)

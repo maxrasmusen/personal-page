@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tetris</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="Game.js"></script>
+  <script type="text/javascript" src="Square.js"></script>
+  <script type="text/javascript" src="Window.js"></script>
+  <script type="text/javascript" src="Board.js"></script>
+  <script type="text/javascript" src="Display.js"></script>
+  <script type="text/javascript" src="Block.js"></script>
+  <script type="text/javascript" src="arrayHelpers.js"></script>
+  <script type="text/javascript" src="templates.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<section id='main'>
+		<section id="rules">
+			<h2> Instructions </h2>
+				<h3> Basics </h3>
+					<p> Blocks will fall from the top of the screen. </p>
+					<p> If they reach the top, the game ends </p>
+					<p> If you fill up every space in a row, that row disappears</p>
+				<h3> Controls </h3>
+					<p>
+						J: Move left <br>
+						L: Move right <br>
+						K: Flip <br>
+						Space: Go Fast <br>
+						W: Pause <br>
+						Q: Reset <br>
+					</p>
+
+		</section>
+		<div id='main-game'></div>
+		<div id='death-screen'> 
+			<p>
+				You died. Press Q to restart.
+			</p>	
+		</div>
+		<section id='sidebar'>
+			<div class='scorepanel' id='panel-one'>
+				<p>
+					Score: <span id='score'>0</span>	
+				</p>
+			</div>
+
+			<div class='scorepanel' id='panel-two'>
+				<p>
+					Highscore: <span id='highscore'>0</span>
+				</p>
+			</div>
+			<div class='scorepanel' id='next-panel'>
+				<p>
+					Next block:
+				</p>
+			</div>
+			<div id='next-window'></div>
+			<div class='scorepanel' id='reset-button'> Reset </div>
+		</section>
+	</section>
+</body>
+</html>

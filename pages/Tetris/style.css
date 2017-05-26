@@ -1,0 +1,207 @@
+* {
+	margin: 0px;
+	font-family: Helvetica;
+}
+li {
+	width: 30px;
+	height: 30px;
+	border: solid grey 1px;
+	display: table-cell;
+	opacity: 0.85;
+	/*transform: rotate(7deg);*/
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+body {
+	/*background: linear-gradient(blue, black	);*/
+	background-color: #f7f0e3;
+}
+
+#main {
+	margin: 0 auto;
+	margin-top: 50px;
+	display: block;
+	width: 770px;
+	position: relative;
+}
+
+#death-screen {
+    display: inline;
+    color: white;
+    position: absolute;
+    /* margin: auto; */
+    left: 34%;
+    margin-top: 50px;
+    display: none;
+}
+#death-screen p{
+	display: inline;
+}
+
+#main-game {
+	border: solid black 1px;
+	border-radius: 5px;
+	/*width: 320px;*/
+	/*background-color: yellow;*/
+	background-image: url('https://media.giphy.com/media/lSzQjkthGS1gc/giphy.gif');
+	background-size: cover;
+	display: inline-block;
+	margin-left: 20px;
+	/*margin-top: 50px;*/
+	box-shadow: 0px 0px 10px 0px black;
+}
+
+
+.background {
+	background-color: black;
+	border: solid darkgrey 1px;
+	opacity: 0;
+}
+
+.terrain {
+	background-color: black;
+	border: solid black 1px;
+}
+
+.block {
+	background-color: grey;
+	border: solid grey 1px;
+}
+
+#next-window {
+	width: 160px;
+	background-color: black;
+	border: solid black 1px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px black;
+	margin-top:10px;
+}
+
+#sidebar {
+	display: inline-block;
+	vertical-align: top;
+	/*margin-top: 50px;*/
+	margin-left: 20px;
+}
+
+#sidebar p {
+	text-align: center;
+}
+
+#rules {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px;
+	width: 20%;
+	border-radius: 5px;	
+	padding: 10px;
+	background-color: #83957B;
+	text-align: center;
+	box-shadow: 0px 0px 10px 0px #83957B;
+}
+
+.scorepanel {
+	margin: 10px;
+	padding: 5px;
+	color: black;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.scorepanel:hover {
+	cursor: default;
+}
+
+#panel-one {
+	border: 1px solid #FFBB97;
+	box-shadow: 0px 0px 10px 0px #FFBB97;
+	background-color: #FFBB97;
+}
+
+#panel-two {
+	border: 1px solid #D6EDCB;
+	background-color: #D6EDCB;
+	box-shadow: 0px 0px 10px 0px #D6EDCB;
+}
+
+#next-panel {
+	margin: 20px 5px 5px 5px;
+	padding: 5px;
+	border: 1px solid #A36E53;
+	background-color: #A36E53;
+	box-shadow: 0px 0px 10px 0px #A36E53;
+}
+
+#reset-button {
+	margin: 20px 5px 5px 5px; 
+	padding :5px;
+	border: 1px solid #99956F;
+	background-color: #99956F;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px #99956F;
+}
+
+#reset-button:hover {
+	opacity: 0.75;
+}
+
+#rules h2 {
+	margin-bottom: 10px;	
+}
+
+#rules h3 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#rules p {
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 770px) {
+	#main-game {
+		width: 320px;
+		display: block;
+		margin: auto;
+	}
+
+	#main {
+		margin: 0px 0px 0px 0px;
+		display: block;
+		width: 100%;
+		/*background-color: white;*/
+	}
+
+	#rules {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+
+	.scorepanel {
+		display: inline-block;
+	}
+
+	#sidebar {
+		text-align: center;
+		display: block;
+	}
+
+	#next-window {
+		margin: auto;
+	}
+}
+
+@media screen and (max-height: 640px), (max-width: 350px){
+	li {
+		width: 20px;
+		height: 20px;
+	}
+	#main-game {
+		width: 220px;
+	}
+}

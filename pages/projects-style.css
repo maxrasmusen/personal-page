@@ -45,3 +45,8 @@
 #main-game * {
     margin: 0px;
 }
+
+#rules {
+    display: inline-block;
+    vertical-align: top;
+}

@@ -41,9 +41,10 @@
 
 			<ul id="project-list">
 				<a href="#project-1"><li>Personal Page</li></a>
-				<a href="#project-2"><li>Project 2 </li></a>
+				<a href="#project-2"><li> Tetris </li></a>
 			</ul>
 
+			<h4
 			<h3 id="project-1"> Personal Page </h3>
 			<h4> Intro </h4>
 			<p>
@@ -65,12 +66,18 @@
 			<h3 id="project-2"> Tetris </h3>
 			<div id='main-game'> </div>
 			<section id="rules">
-			<h2> Instructions </h2>
-				<h3> Basics </h3>
+			<h4
+> Instructions </h4
+>
+				<h4
+	> Basics </h4
+	>
 					<p> Blocks will fall from the top of the screen. </p>
 					<p> If they reach the top, the game ends </p>
 					<p> If you fill up every space in a row, that row disappears</p>
-				<h3> Controls </h3>
+				<h4
+	> Controls </h4
+	>
 					<p>
 						J: Move left <br>
 						L: Move right <br>
@@ -79,8 +86,21 @@
 						W: Pause <br>
 						Q: Reset <br>
 					</p>
-
 		</section>
+		<h4> Project Overview </h4>
+		<p> Our task for this project was to create a simple game to run in a browser using HTML, Javascript and CSS. For my game I chose to make Tetris. It turned out to be challenging, particularly rendering the game logic using only HTML and CSS, since the project guidelines dissalowed the use of the canvas tag. I used an object-oriented architecture to build the game, as it allowed for a much easier separation of concerns than another method. </p>
+
+		<h4> Frames </h4>
+		<p> In order to mimick frames, in the game, I have a function 'tick', which calls itself with a timeout. This makes it easy to interrupt or change the speed of frames, which is how the game is sped up and paused. </p>
+
+		<h4> Rendering </h4>
+		<p> This was the most challenging part of the project. The current board state is stored in a 10x20 Javascript matrix, with each element storing the type of tile at that position on the board. These can be either empty, terrain(already landed blocks), or the currently falling block. Each frame, this matrix is used to update the sytling of a list of HTML elements on the page to reflect what is currently stored at that location. By keeping the logical game state separate from the game's display, it is much easier to manipulate the game board without worrying about keeping track of a html elements. </p>
+
+		<h4> Blocks </h4>
+		<p> Once a block has landed, the only information we need to know is that certain tiles are full of terrain, so there is no extra functionality we need to deal with them. However, the currently falling block needs to update every turn, and must have collision detection applied to it each frame. To do this I use the block class. This stores the blocks position, and also its shape, which is stored as a 2d matrix of characters. To move the block horizontally and vertically, I only need to update it's x or y position. To rotate it, I rotate the shape matrix. This means the block does not have to store it's rotation, or apply it more than once. </p>
+
+		<h4> Collision </h4>
+		<p> Collision is done by creating a dummy block, and moving it in some way, either translation or rotation, and checking if there is any overlap with terrain or the edge of the screen. If there is, the movement is invalid and the block does move. Additionally, if the movement is downward, caused by the frame updating, the block has reached the bottom of the screen, or a piece of terrain, and stops. It is then transformed into terrain. </p>
 
 			<a class="to-top" href="#body"> Go to top of page. &#x2191 </a>
 

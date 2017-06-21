@@ -39,56 +39,53 @@
 		
 		<h2> My Projects</h2>
 
-			<ul id="project-list">
-				<a href="#project-1"><li>Personal Page</li></a>
-				<a href="#project-2"><li> Tetris </li></a>
-			</ul>
+		<ul id="project-list">
+			<a href="#project-1"><li>Personal Page</li></a>
+			<a href="#project-2"><li> Tetris </li></a>
+			<a href="#project-3"><li> Biscuits </li></a>
+		</ul>
 
-			<h4
-			<h3 id="project-1"> Personal Page </h3>
-			<h4> Intro </h4>
-			<p>
-				The first project, or pseudo-project, that I have done at the Academy is this page. It is written using HTML and CSS, which I wrote from scratch. There are a few pages, each with different information. The CV page has information about my education, skills and past work. The personal statement page contains a statement about my goals and current position. This page, the projects page, shows the details of projects I have worked on. There is also a link to my github profile.
-			</p>
-			<p>
-				The main page has links to every other page on the site, as well as containing a mailto link to send me an email.  
-			</p>
+		<h4
+		<h3 id="project-1"> Personal Page </h3>
+		<h4> Intro </h4>
+		<p>
+			The first project, or pseudo-project, that I have done at the Academy is this page. It is written using HTML and CSS, which I wrote from scratch. There are a few pages, each with different information. The CV page has information about my education, skills and past work. The personal statement page contains a statement about my goals and current position. This page, the projects page, shows the details of projects I have worked on. There is also a link to my github profile.
+		</p>
+		<p>
+			The main page has links to every other page on the site, as well as containing a mailto link to send me an email.  
+		</p>
 
-			<h4>Screenshots</h4>
-			<img src="../images/index-screenshot.png"/>
+		<h4>Screenshots</h4>
+		<img src="../images/index-screenshot.png"/>
 
-			<p>
-				This is a screenshot just to give a feel of what the index page looks like, and the overall feel of the site. 
-			</p>
+		<p>
+			This is a screenshot just to give a feel of what the index page looks like, and the overall feel of the site. 
+		</p>
 
-			<a class="to-top" href="#body">Go to top of page. &#x2191</a>
+		<a class="to-top" href="#body">Go to top of page. &#x2191</a>
 
-			<h3 id="project-2"> Tetris </h3>
-			<div id='main-game'> </div>
-			<section id="rules">
-			<h4
-> Instructions </h4
->
-				<h4
-	> Basics </h4
-	>
-					<p> Blocks will fall from the top of the screen. </p>
-					<p> If they reach the top, the game ends </p>
-					<p> If you fill up every space in a row, that row disappears</p>
-				<h4
-	> Controls </h4
-	>
-					<p>
-						J: Move left <br>
-						L: Move right <br>
-						K: Flip <br>
-						Space: Go Fast <br>
-						W: Pause <br>
-						Q: Reset <br>
-					</p>
-		</section>
+		<h3 id="project-2"> Tetris </h3>
+		
 		<h4> Project Overview </h4>
 		<p> Our task for this project was to create a simple game to run in a browser using HTML, Javascript and CSS. For my game I chose to make Tetris. It turned out to be challenging, particularly rendering the game logic using only HTML and CSS, since the project guidelines dissalowed the use of the canvas tag. I used an object-oriented architecture to build the game, as it allowed for a much easier separation of concerns than another method. </p>
+
+		<div id='main-game'> </div>
+		<section id="rules">
+		<h4> Instructions </h4>
+		<h4> Basics </h4>
+		<p> Blocks will fall from the top of the screen. </p>
+		<p> If they reach the top, the game ends </p>
+		<p> If you fill up every space in a row, that row disappears</p>
+		<h4> Controls </h4>
+		<p>
+			J: Move left <br>
+			L: Move right <br>
+			K: Flip <br>
+			Space: Go Fast <br>
+			W: Pause <br>
+			Q: Reset <br>
+		</p>
+		</section>
 
 		<h4> Frames </h4>
 		<p> In order to mimick frames, in the game, I have a function 'tick', which calls itself with a timeout. This makes it easy to interrupt or change the speed of frames, which is how the game is sped up and paused. </p>
@@ -102,7 +99,25 @@
 		<h4> Collision </h4>
 		<p> Collision is done by creating a dummy block, and moving it in some way, either translation or rotation, and checking if there is any overlap with terrain or the edge of the screen. If there is, the movement is invalid and the block does move. Additionally, if the movement is downward, caused by the frame updating, the block has reached the bottom of the screen, or a piece of terrain, and stops. It is then transformed into terrain. </p>
 
-			<a class="to-top" href="#body"> Go to top of page. &#x2191 </a>
+		<a class="to-top" href="#body"> Go to top of page. &#x2191 </a>
+
+		<a href="https://floating-bayou-91981.herokuapp.com/biscuits"> <h3 id="project-3"> Biscuit Discussion Website </h3> </a>
+
+		<h4> Project Overview </h4>
+		<p> The task here was to build a website using the Sinatra framework that would implement all seven restful routes, and host data using a postgres database. My site was a discussion forum focused around users' favourite biscuits. This project used all the front-end languages of the Tetris project, plus ruby. I didn't have to directly write any SQL as I used the activerecord gem. I used some other third party gems to add some functionality to the website: imgurapi to upload images to imgur, and ransack to search. I also used bootstrap to implement the navbar. The final part of the project was to deploy the site to <a href="https://floating-bayou-91981.herokuapp.com/biscuits" id="heroku-link">heroku</a>. <p>
+
+		<h4> Basic functionality </h4>
+		<p> The basic required functionality was to implement seven restful routes for a single resource. In this case, that was biscuit pages. Each biscuit has it's own page, which users can view, create, edit and delete. Users can upload the name, description, rating and image for the biscuit. In addition to this, I added a messaging system that allowed users to send messages to each other and have the page update in real time. </p>
+
+		<img src="../images/biscuits.png">
+
+		<h4> Images </h4>
+		<p> The most consistently challenging part of the project throughout was dealing with images. This is because of the deployment method we used. When a heroku deployment is updated, it wipes the filesystem and builds the project from git. This means that any images stored in the filesystem are lost. My way around this, in order to allow a user to upload an image from their computer, was to upload the image to imgur, an image hosting site, and save the url to the database. This involved using imgur's public API. I initially decided to use the imgurapi gem to simplify this process. However, the gem itself is buggy, and this caused me a few headaches. If I was to redo this project, I would not use the gem, and interact with the api directly using a gem like HTTParty. </p>
+
+		<h4> Messages </h4>
+		<p> Users can post messages to a discussion, and recieve them in real time. This is achieved by polling the server every 2 seconds for new messages, which are then added to the page. However, this method does not scale well and I am plannig on switching to websockets when I get the time. </p>
+
+		<a class="to-top" href="#body"> Go to top of page. &#x2191 </a>
 
 		<div id="contact">
 			<p> <a href="mailto:mrasmusen@spartaglobal.co"> Email: mrasmusen@spartaglobal.co </a></p>

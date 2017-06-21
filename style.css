@@ -118,6 +118,11 @@ nav li {
 	padding: 20px 0px 8px 0px;
 }
 
+#heroku-link {
+	color: #257FC4;
+	text-decoration: underline;
+}
+
 #page {
 	width: 80%;
 	margin: auto;
@@ -134,17 +139,14 @@ nav li {
 
 #page h2 {
 	color: #257FC4;
-	font-size: 1.7em;
 }
 
 #page h3 {
 	color: #257FC4;
-	font-size: 1.5em;
 }
 
 #page h4 {
 	color: #257FC4;
-	font-size: 1.3em;
 }
 
 #page > ul {
@@ -163,7 +165,7 @@ nav li {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 15px;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 #project-list {

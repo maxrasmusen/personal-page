@@ -43,6 +43,7 @@
 			<a href="#project-1"><li>Personal Page</li></a>
 			<a href="#project-2"><li> Tetris </li></a>
 			<a href="#project-3"><li> Biscuits </li></a>
+			<a href="#project-4"><li> Profiles Page Testing Framework </li></a>
 		</ul>
 
 		<h4
@@ -119,11 +120,31 @@
 
 		<a class="to-top" href="#body"> Go to top of page. &#x2191 </a>
 
+		<h3 id="project-4"> Spartan Profile Page Testing Frameworkd </h3>
+
+		<h4> Project Overview </h4>
+		<p> The aim of this project was to design and build an automated testing framework for some of the functionality of one of Sparta's client-facing apps. The website shows available Spartans, each with a profile listing their skills, education and availability. The testing framework was to test the functionality of the minimum product that could be used. We were testing that admins can edit and view Spartan's pages, and that they could log in. The project used the cucumber framework, and ran tests with Watir, and wrapper for Selenium. The project in total had 7 people working on it, and was tracked using git. </p>
+
+		<img src="../images/profiles-homepage.png">
+
+		<h4> Introduction and Features </h4>
+		<p> The beginning of the project involved us meeting with the project owner and deciding which features were in the scope of the MVP, and so needed to be properly tested. During this phase, which involved some initial exploratory testing of the app, raised some significant issues with the app, including one that fully crashed the site. After speaking to the project owner, we set out all of the user journies that needed to be tested in the first sprint, and delegated various tasks to different groups.</p>
+
+		<h4> Page Object Model</h4>
+		<p> We built a POM to access each page on the site. Each page was assigned a class, with methods to access each element on the page. We also built a class for the navigation bar, which was displayed on every page. These pages were accessed via a main class, which also span up the browser to run the tests in.</p>
+
+		<h4> Scenarios in Cucumber </h4>
+		<p> For each user journey, we laid out a scenario in gherkin. We used these to generate cucumber's step definitions. From there we could use the POM to make mainpulate and make assertions about elements on the page. We were then able to generate html reports that raised defects to the developers, which could then be adressed.</p>
+
+		<a class="to-top" href="#body"> Go to top of page. &#x2191 </a>
+
 		<div id="contact">
 			<p> <a href="mailto:mrasmusen@spartaglobal.co"> Email: mrasmusen@spartaglobal.co </a></p>
 		</div>
-
+		
 	</main>
+
+
 	
 </body>
 </html>
